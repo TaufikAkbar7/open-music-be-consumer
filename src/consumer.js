@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const amqp = require('amqplib');
 const PlaylistService = require('./service/PlaylistService');
 const MailtrapService = require('./service/Mailtrap');
@@ -15,7 +17,7 @@ const init = async () => {
     durable: true,
   });
 
-  channel.consume('export:playlist', listener.listen, { noAck: true });
+  channel.consume('export:playlists', listener.getMessagePlaylist, { noAck: true });
 };
 
 init();

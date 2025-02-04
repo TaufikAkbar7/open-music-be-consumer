@@ -21,4 +21,4 @@ const DTOSongsPlaylist = (data = []) => {
   return mappingResults
 }
 
-module.exports = { DTOPlaylistActivity, DTOSongsPlaylist }
+module.exports = { DTOSongsPlaylist }

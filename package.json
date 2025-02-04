@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/consumer.js",
+    "dev": "nodemon -L ./src/consumer.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "amqplib": "^0.10.5",
     "dotenv": "^16.4.7",
     "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
     "pg": "^8.13.1"
   }
 }

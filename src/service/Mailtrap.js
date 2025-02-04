@@ -25,7 +25,7 @@ class Mailtrap {
         }
       ]
     }
-
+    console.info('--send email--')
     return this._transporter.sendMail(message)
   }
 }
